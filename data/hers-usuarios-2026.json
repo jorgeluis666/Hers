@@ -1,0 +1,7 @@
+{
+  "updatedAt": "2026-10-06T06:41:45.590Z",
+  "encryption": "RSA-OAEP-SHA256/AES-256-GCM",
+  "key": "b45ZAWCQzwgII7AVSoOyGpPe+iu3aCPrHe6n2fFhB8nDdPgTL85b/sLLrOjkni4YzMDv2YSwbt0oznBULwlXcY2aI+Rr1xEDqQ6Nfh2LBrAoJXxlPzPgVUKI4KN1Wxi81kIwDkvrBz2es2v6N/mGYItgjZ5f8X9i7tplEpqCPMiVE9yS/iDwKxLyOgqirn4j0KsaKKmvgS0h2kL02sqeZ9orT4xV8ITnW0jyu1AcZsyN+ZXwe/MhEhb+NReH6CXa5yaeDpA1E2AfSgw44jJ5PlebkIVh5ocJLHV7ysl0CWZyXG5q1boBhVjOAGhonoQG2NoD1tgCXLPlCuN4p7YpU6QYUbPiZclXx7i401BUY9sR4YSElmT12gKA+eTWspXXEjuD8MWzHrr/mnJhaKfrjw2lXxkWduArqdDpFroYlsSWEiunIEK9k42UKm87IefobmM8pq2FdjJoBQayaHlej+y/6Ck9rH/Mx1+10TIhh4h5BZjmUt92ZzugTSnLQUbQ",
+  "iv": "bXKjSw3BQ09VF8/u",
+  "data": "XjbBd2Pwr9Iecnl7QpBeKRxvBx+CYGcqBC/zsIzl3E6k3tBnuq9DB8cO2VKbVA=="
+}

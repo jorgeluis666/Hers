@@ -1,0 +1,89 @@
+(function () {
+  const VIEW_KEY = 'hers-active-view';
+  const VIEW_META = {
+    'view-obj': {
+      title: 'Gasto Publicitario',
+      caption: 'Leads en Google Ads',
+      status: 'Fuente pendiente de validar',
+      source: 'Fuente: data/hers-lima-retail-2026.json',
+      footer: 'Resultados de pauta digital',
+    },
+    'view-projections': {
+      title: 'Proyecciones',
+      caption: 'Cierre de mes y simulador de objetivo',
+      status: 'Proyección sobre datos reales',
+      source: 'Fuente: Gasto Publicitario / carpeta Google Ads Hers Campañas',
+      footer: 'Proyección lineal según el ritmo del mes',
+    },
+    'view-keywords': {
+      title: 'Análisis de Palabras Clave',
+      caption: 'Comportamiento de las palabras clave por campaña',
+      status: 'Informe de palabras clave de Google Ads',
+      source: 'Fuente: data/hers-palabras-clave-2026.json (Drive: Google Ads Hers Keywords)',
+      footer: 'Sincronización diaria con Drive y botón Actualizar',
+    },
+    'view-users': {
+      title: 'Usuarios y Claves',
+      caption: 'Quién tiene la clave del tablero',
+      status: 'Directorio sin contraseñas',
+      source: 'Fuente: data/hers-usuarios-2026.json (cifrado)',
+      footer: 'La clave no se guarda aquí: vive en el secret HERS_PAGE_PASSWORD de GitHub',
+    },
+  };
+
+  function storedView() {
+    try {
+      const value = window.localStorage.getItem(VIEW_KEY);
+      return VIEW_META[value] ? value : 'view-obj';
+    } catch {
+      return 'view-obj';
+    }
+  }
+
+  function saveView(viewId) {
+    try {
+      window.localStorage.setItem(VIEW_KEY, viewId);
+    } catch {
+      // La navegación sigue funcionando aunque localStorage no esté disponible.
+    }
+  }
+
+  function showView(viewId) {
+    const meta = VIEW_META[viewId] || VIEW_META['view-obj'];
+    document.querySelectorAll('.view').forEach(view => {
+      view.classList.toggle('visible', view.id === viewId);
+    });
+    document.querySelectorAll('[data-view-target]').forEach(button => {
+      const active = button.dataset.viewTarget === viewId;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-current', active ? 'page' : 'false');
+    });
+
+    document.getElementById('topbar-title').textContent = meta.title;
+    document.getElementById('topbar-caption').textContent = meta.caption;
+    document.getElementById('topbar-status').textContent = meta.status;
+    document.getElementById('footer-source').textContent = meta.source;
+    document.getElementById('footer-status').textContent = meta.footer;
+    saveView(viewId);
+
+    if (viewId === 'view-projections') window.HersProjections?.init();
+    if (viewId === 'view-keywords') window.HersKeywords?.init();
+    if (viewId === 'view-users') window.HersUsuarios?.init();
+    // Vuelve a poner el mes en la barra superior, que la vista anterior reemplazo.
+    if (viewId === 'view-obj' && window.HersDashboard?.getData()) window.HersDashboard.render();
+    window.setTimeout(() => window.dispatchEvent(new Event('resize')), 0);
+  }
+
+  function initNavigation() {
+    document.querySelectorAll('[data-view-target]').forEach(button => {
+      button.addEventListener('click', () => showView(button.dataset.viewTarget));
+    });
+    showView(storedView());
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNavigation);
+  } else {
+    initNavigation();
+  }
+})();
