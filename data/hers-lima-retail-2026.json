@@ -12,6 +12,7 @@
       "records": [
         {
           "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "type": "Búsqueda",
           "cost": 461.27,
           "impressions": 3593,
           "ctr": 0.1355,
@@ -50,6 +51,7 @@
       "records": [
         {
           "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "type": "Búsqueda",
           "cost": 82.48,
           "impressions": 547,
           "ctr": 0.192,
@@ -89,6 +91,7 @@
   "records": [
     {
       "campaign": "CE | Search | Canastas Navideñas | Lima",
+      "type": "Búsqueda",
       "cost": 82.48,
       "impressions": 547,
       "ctr": 0.192,
@@ -108,7 +111,7 @@
   "drive": {
     "folderId": "1sNZ2FuYWntAn9ARHiY-TLxcE9SqMJbLR",
     "discovery": "publica",
-    "lastSync": "2026-10-06T06:41:05Z",
+    "lastSync": "2026-10-15T18:50:33Z",
     "files": [
       {
         "id": "1EyEd6CUSbw7XNDcq4gNk_lNXlkgoiuoyk__KjMyKuPg",
