@@ -31,29 +31,31 @@ Las cuatro estan en `02_Clientes de la agencia/Hers` (`1etL5vjvK2RIT2wxEeBkk4PWD
 
 | Fuente (informe de campana) | Campo JSON | Uso |
 | --- | --- | --- |
-| `Campaña` | `campaign` | Tabla y eje del grafico |
-| `Costo` | `cost` | KPI, grafico y tabla |
-| `% Δ` despues de Costo | `costDelta` | Tabla |
-| `CTR` | `ctr` | KPI, grafico y tabla |
-| `% Δ` despues de CTR | `ctrDelta` | Tabla |
-| `Clics` | `clicks` | KPI, grafico y tabla |
-| `% Δ` despues de Clics | `clicksDelta` | Tabla |
-| `Conversiones` | `conversions` | KPI, grafico y tabla |
-| `% Δ` despues de Conversiones | `conversionsDelta` | Tabla |
-| `Costo/conv.` | `costPerConversion` | KPI, grafico y tabla |
-| `% Δ` despues de Costo/conv. | `costPerConversionDelta` | Tabla |
-| Rango de fechas del informe | `period` (por mes) | Fecha de corte de Proyecciones |
-| `Presupuesto` de campanas habilitadas | `dailyBudget` (por mes) | Presupuesto de Proyecciones |
-| `Estado de la campaña` | `status` (por campana) | Proyeccion por campana |
-| `Presupuesto` (tipo diario) | `dailyBudget` (por campana) | Proyeccion por campana |
+| `Campaña` | `campaign` | Distribucion por campana, un cuadro por campana (`campaignLabel()`) |
+| `Costo` | `cost` | KPIs del periodo, graficos y distribucion |
+| `% Δ` despues de Costo | `costDelta` | Guardado; el tablero compara con el mes calendario anterior |
+| `CTR` | `ctr` | Guardado; el CTR se recalcula como clics / impresiones |
+| `% Δ` despues de CTR | `ctrDelta` | Guardado (no se muestra) |
+| `Clics` | `clicks` | KPIs, CTR, CPC, tasa de conversion y graficos |
+| `% Δ` despues de Clics | `clicksDelta` | Guardado (no se muestra) |
+| `Conversiones` | `conversions` | KPIs, costo y tasa de conversion, graficos |
+| `% Δ` despues de Conversiones | `conversionsDelta` | Guardado (no se muestra) |
+| `Costo/conv.` | `costPerConversion` | Guardado; se recalcula como inversion / conversiones |
+| `% Δ` despues de Costo/conv. | `costPerConversionDelta` | Guardado (no se muestra) |
+| `Tipo de campaña` | `type` (por campana) | Guardado (hoy todas son de Busqueda) |
+| Rango de fechas del informe | `period` (por mes) | Titulo del periodo, mes en curso y prorrateo de la comparacion; fecha de corte de Proyecciones |
+| `Presupuesto` de campanas habilitadas | `dailyBudget` (por mes) | Total de la distribucion; presupuesto de Proyecciones |
+| `Estado de la campaña` | `status` (por campana) | Distribucion y cuadro por campana; proyeccion por campana |
+| `Presupuesto` (tipo diario) | `dailyBudget` (por campana) | Distribucion y cuadro por campana; proyeccion por campana |
 
-Los `% Δ` no vienen en el informe: se calculan contra el mes anterior.
+Los `% Δ` no vienen en el informe: la sincronizacion los calcula contra el mes anterior cargado y el tablero no los
+usa (compara con el mes calendario anterior, ver el README).
 
 ## Palabras clave (informe de palabras clave de busqueda)
 
 | Columna del informe | Campo JSON | Uso |
 | --- | --- | --- |
-| `Palabra clave` | `keyword` | Fila del cuadro de la campana |
+| `Palabra clave` | `keyword` | Fila del cuadro de la campana (Palabras Clave y Gasto Publicitario) y del ranking |
 | `Tipo de concordancia` | `matchType` | Debajo de la palabra clave; junto con ella identifica la fila mes a mes |
 | `Campaña` | `campaign` | Un cuadro por campana; si el informe no la trae, la campana del mes en Gasto Publicitario |
 | `Grupo de anuncios` | `adGroup` | Una palabra clave en varios grupos se suma en una fila |
@@ -66,10 +68,12 @@ Los `% Δ` no vienen en el informe: se calculan contra el mes anterior.
 CTR, CPC, tasa y costo por conversion no se guardan: se calculan de las sumas. Las filas `Total: ...` se ignoran.
 Las palabras clave quitadas de la cuenta no salen en el informe, asi que en setiembre de 2026 las filas suman
 S/ 436.75 contra S/ 461.27 de la cuenta.
+Gasto Publicitario lee este JSON tal como lo publica el build, sin las campanas de `keywords.excludeCampaigns`.
 
 ## Archivos clave
 
-- `js/objectives.js`: logica de gasto publicitario, KPIs, grafico y tabla de resultados.
+- `js/objectives.js`: Gasto Publicitario: pestanas de mes y Anual, periodo con KPIs, grafico de la cuenta,
+  distribucion y cuadro por campana y ranking de palabras clave; expone `HersDashboard` (`snapshot()`).
 - `js/projections.js`: proyeccion al cierre y simulador de objetivo; lee `HersDashboard.snapshot()`.
 - `js/keywords.js`: analisis de palabras clave y boton Actualizar (lee las hojas de Drive desde el navegador).
 - `data/drive-config.json`: IDs y nombres de las dos carpetas de Drive y `keywords.excludeCampaigns` (vacio).

@@ -8,7 +8,7 @@ activa desde el 7 de setiembre de 2026).
 Es una copia adaptada del tablero de SUMI (`jorgeluis666/SUMI`), que a su vez sale del de Aquarius, con los mismos
 modulos: Gasto Publicitario, Proyecciones, Palabras Clave y Usuarios y Claves.
 
-Version actual: `v1.0.0`.
+Version actual: `v1.1.0`.
 
 ## Acceso
 
@@ -27,15 +27,64 @@ lateral.
 
 - Titulo: `Gasto Publicitario`
 - Subtitulo: `Leads en Google Ads` (el objetivo del contrato: leads con campanas de la red de busqueda).
-- KPIs: coste total, CTR, clics, conversiones, costo por conversion e impresiones.
-- Grafico de lineas con tres detalles, que se eligen con los botones del panel y
+- Logica en `js/objectives.js`. Sale del informe de campana de Google Ads (un total por mes,
+  `data/hers-lima-retail-2026.json`) y del informe de palabras clave (`data/hers-palabras-clave-2026.json`, tal
+  como lo publica el build).
+- **Pestanas de mes**: Enero a Diciembre y **Anual**. Un mes sin informe de campana queda apagado y el punto
+  marca el ultimo mes con datos. La eleccion se guarda en `hers_selected_month` (`anual` incluido). Si falta el
+  informe de un mes entre el primero y el ultimo, un aviso lo dice.
+- **Periodo** (`Periodo: 7-30 Setiembre 2026`, o `1-4 Octubre 2026 (mes en curso)`) con 8 KPIs: inversion,
+  impresiones, clics, CTR, CPC, conversiones, costo por conversion y tasa de conversion (conversiones / clics).
+  Los cocientes se recalculan sobre las sumas. El rango sale de `period` del informe. Solo el primer mes con
+  datos empieza en su primer dia real (setiembre 2026, el 7, cuando arranco la campana); los siguientes
+  empiezan el dia 1 aunque la campana no haya gastado ese dia.
+  - Mes cerrado: contra el mes anterior completo. Mes en curso: contra el mes anterior **prorrateado a los
+    mismos dias**, porque el informe trae un total por mes; CTR, CPC, costo y tasa no cambian al prorratear.
+    Si el mes anterior no cubre el mes entero, la bajada dice sobre cuantos dias se prorratea ("vs Setiembre
+    prorrateado a 4 dias, de 24 con datos": setiembre va del 7 al 30). Solo el mes calendario anterior: si
+    falta (setiembre, el primer mes), "Sin mes anterior para comparar" y no hay columnas de comparacion.
+  - Flecha y color segun si subir es bueno: inversion neutra; CPC y costo por conversion, bajar es bueno.
+  - Anual: acumulado de los meses con informe; los KPIs sumables muestran el promedio mensual de los meses
+    cerrados en lugar de la variacion.
+  - Los `*Delta` del JSON no se usan: comparan un mes en curso de pocos dias contra un mes completo.
+- Debajo del periodo queda el grafico de la cuenta. En Anual queda en la vista Mes.
+- **Distribucion de inversion por campana**: estado, presupuesto diario, inversion y su %, impresiones, clics,
+  CTR, CPC, conversiones, costo por conversion y tasa de conversion, con el total del periodo. El nombre tecnico
+  de la campana va en chico solo si difiere del corto. En Anual las campanas se suman por nombre y el estado y el
+  presupuesto son los del ultimo mes.
+- **Un cuadro por campana** (hoy una sola, `CE | Search | Canastas Navideñas | Lima`; la estructura aguanta
+  mas). Es de temporada: cuando termine, su cuadro sigue en los meses en que corrio y no sale en los meses sin
+  actividad.
+  - KPIs con variacion: inversion, clics, CTR, CPC, conversiones, costo por conversion y presupuesto diario.
+    El subtitulo dice contra que se compara, "Nueva: no corria en ..." o, en Anual, en que meses corrio.
+  - Grafico **por mes** del ano, con hueco donde la campana no corrio. Indicadores: inversion y conversiones
+    (por defecto), clics e impresiones; con varios, cada uno en su panel con su escala sobre el mismo eje.
+    Acumulado del mes y Por dia no se ofrecen (no hay serie diaria por campana): quedan listos para cuando
+    llegue un informe por dia y campana en `months[].detail`.
+  - **Palabras clave de la campana** del mes: conversiones, conversiones del mes anterior y variacion ("Nuevo"
+    si no estaba), costo por conversion, inversion y su % de la campana, impresiones, clics y CPC. Una palabra
+    clave es su texto mas su concordancia, como en el modulo Palabras Clave. Solo se compara con el mes anterior
+    si los dos informes son de mes completo o cubren los mismos dias; si no, las columnas de comparacion se
+    ocultan. Si las palabras clave suman menos que la campana (palabras quitadas o con pocas impresiones), una
+    linea lo dice (setiembre 2026: S/ 436.76 de S/ 461.27; no es un error).
+  - Se minimiza con la flecha. Indicadores, vista y minimizado se recuerdan por campana
+    (`hers_gasto_campaign_charts`).
+- **Ranking de palabras clave del periodo**: por conversiones dentro de cada campana, con la lider marcada
+  con una estrella, conversiones del mes anterior y variacion. Cabecera fija, Campana y Palabra clave
+  ancladas, filtro por campana, Compacto (`hers_gasto_kw_compact`) y Pantalla completa (las pestanas
+  de mes entran al panel; `Esc` sale). "Ver analisis completo" abre el modulo Palabras Clave, que sigue
+  siendo el analisis a fondo.
+- Solo aparece lo que tuvo actividad: campanas y palabras clave sin inversion, impresiones ni clics en el
+  periodo no salen en ninguna tabla, cuadro ni grafico (`isActive`).
+- Las palabras clave respetan `keywords.excludeCampaigns` de `data/drive-config.json`.
+- Grafico de la cuenta con tres detalles, que se eligen con los botones del panel y
   quedan guardados en `localStorage`:
-  - **Dia** (por defecto): un punto por dia del mes del filtro.
+  - **Dia** (por defecto): un punto por dia del mes elegido.
   - **Semana**: bloques de siete dias contados desde el 1 del mes (1-7, 8-14,
     ...). Solo el ultimo bloque puede quedar corto y el tooltip avisa cuantos
     dias trae.
-  - **Mes**: un punto por mes con todo lo que va del ano. El mes del filtro se
-    marca con un punto mas grande y un clic en cualquier punto cambia el filtro
+  - **Mes**: un punto por mes con todo lo que va del ano. El mes elegido se
+    marca con un punto mas grande y un clic en cualquier punto cambia la pestana
     a ese mes.
 - Dia y Semana necesitan la serie diaria del mes. Si el mes no la tiene, esos dos
   botones quedan apagados y el grafico muestra la vista Mes sin perder la
@@ -248,8 +297,8 @@ El tablero se arma desde la carpeta de Google Drive **Google Ads Hers Campañas*
 Una hoja de calculo por mes con el informe de campana de Google Ads (`Hers <mes> <ano>`, con Costo, Impr.,
 Clics, CTR, Conversiones, Costo/conv., Presupuesto y Estado de la campaña). Tambien sirve el CSV tal como lo
 exporta Google Ads (`Hers <mes> <ano>.csv`). Para agregar un mes basta con subir su informe a esa carpeta: la
-sincronizacion lo detecta por el rango de fechas del archivo y lo suma al filtro. Los informes se exportan a
-nivel de **cuenta**, para que entren todas las campanas de Hers.
+sincronizacion lo detecta por el rango de fechas del archivo y lo suma a las pestanas de mes. Los informes se
+exportan a nivel de **cuenta**, para que entren todas las campanas de Hers.
 
 La fuente normalizada que consume el tablero es `data/hers-lima-retail-2026.json`, agrupada por mes:
 
@@ -272,7 +321,9 @@ La fuente normalizada que consume el tablero es `data/hers-lima-retail-2026.json
 }
 ```
 
-Los `% Δ` de la tabla se calculan comparando cada campana con la del mes anterior, no vienen en el informe.
+Los campos `*Delta` de cada campana (variacion contra el mes anterior cargado) los calcula la sincronizacion; el
+tablero no los usa: compara con el mes calendario anterior (ver Modulo principal). Cada campana guarda tambien su
+`type` (columna `Tipo de campaña`, si el informe la trae).
 `period` es el rango de fechas del informe y `dailyBudget` la suma de presupuestos diarios de las campanas
 habilitadas (ver Proyecciones); cada campana trae ademas su `status` y su `dailyBudget`. Las series diarias
 (`daily`, opcionales) son independientes: la sincronizacion no las toca.
