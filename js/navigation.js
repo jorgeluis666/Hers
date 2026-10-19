@@ -22,13 +22,6 @@
       source: 'Fuente: data/hers-palabras-clave-2026.json (Drive: Google Ads Hers Keywords)',
       footer: 'Sincronización diaria con Drive y botón Actualizar',
     },
-    'view-users': {
-      title: 'Usuarios y Claves',
-      caption: 'Quién tiene la clave del tablero',
-      status: 'Directorio sin contraseñas',
-      source: 'Fuente: data/hers-usuarios-2026.json (cifrado)',
-      footer: 'La clave no se guarda aquí: vive en el secret HERS_PAGE_PASSWORD de GitHub',
-    },
   };
 
   function storedView() {
@@ -70,7 +63,6 @@
 
     if (viewId === 'view-projections') window.HersProjections?.init();
     if (viewId === 'view-keywords') window.HersKeywords?.init();
-    if (viewId === 'view-users') window.HersUsuarios?.init();
     // Vuelve a poner el mes en la barra superior, que la vista anterior reemplazo.
     if (viewId === 'view-obj' && window.HersDashboard?.getData()) window.HersDashboard.render();
     window.setTimeout(() => window.dispatchEvent(new Event('resize')), 0);
