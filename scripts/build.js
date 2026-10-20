@@ -63,7 +63,14 @@ function main() {
   if (driveConfig.apiKey) console.log('[build] sincronizacion desde el navegador habilitada');
   else console.warn('[build] sin HERS_DRIVE_API_KEY: el boton Sincronizar trae la ultima publicacion');
 
-  html = html.replace('</head>', () => `<script>window.HERS_RETAIL_DATA = ${data};window.HERS_KEYWORDS_DATA = ${keywords};window.HERS_DRIVE_CONFIG = ${driveJson};</script></head>`);
+  // CRM de leads: el Web App de la hoja privada (scripts/apps-script/crm-leads.gs). URL y token no viven en el
+  // repo: llegan por HERS_CRM_URL y HERS_CRM_TOKEN y solo quedan dentro del HTML cifrado.
+  const crmConfig = { url: process.env.HERS_CRM_URL || '', token: process.env.HERS_CRM_TOKEN || '' };
+  const crmJson = JSON.stringify(crmConfig).replace(/</g, '\\u003c');
+  if (crmConfig.url && crmConfig.token) console.log('[build] CRM de leads conectado a la hoja privada');
+  else console.warn('[build] sin HERS_CRM_URL/HERS_CRM_TOKEN: el modulo Leads guarda solo en el navegador');
+
+  html = html.replace('</head>', () => `<script>window.HERS_RETAIL_DATA = ${data};window.HERS_KEYWORDS_DATA = ${keywords};window.HERS_DRIVE_CONFIG = ${driveJson};window.HERS_CRM = ${crmJson};</script></head>`);
 
   try {
     fs.rmSync(DIST_DIR, { recursive: true, force: true });

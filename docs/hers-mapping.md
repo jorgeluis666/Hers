@@ -70,11 +70,27 @@ Las palabras clave quitadas de la cuenta no salen en el informe, asi que en seti
 S/ 436.75 contra S/ 461.27 de la cuenta.
 Gasto Publicitario lee este JSON tal como lo publica el build, sin las campanas de `keywords.excludeCampaigns`.
 
+## Leads (CRM de feedback, hoja privada)
+
+Pestana "Leads por campana": una fila por mes y campana con lo que completa el cliente.
+
+| Columna de la hoja | Uso |
+| --- | --- |
+| `mes` | Mes (AAAA-MM) |
+| `plataforma` / `campana` | Google Ads, Meta Ads u Otro; nombre tecnico de la campana del informe |
+| `leads` / `calificados` / `ventas` | Conteos enteros que completa el cliente (vacio = sin dato) |
+| `monto` | Monto vendido en soles |
+| `actualizado` | Marca de tiempo del Web App |
+
+No se guardan en `data/`: viven en la hoja privada (`scripts/apps-script/crm-leads.gs`).
+
 ## Archivos clave
 
 - `js/objectives.js`: Gasto Publicitario: pestanas de mes y Anual, periodo con KPIs, grafico de la cuenta,
   distribucion y cuadro por campana y ranking de palabras clave; expone `HersDashboard` (`snapshot()`).
 - `js/projections.js`: proyeccion al cierre y simulador de objetivo; lee `HersDashboard.snapshot()`.
+- `js/leads.js`: CRM de feedback del cliente (pestana Leads): tabla por campana con las columnas del cliente editables.
+- `scripts/apps-script/crm-leads.gs`: Web App de la hoja privada donde se guarda lo que completa el cliente.
 - `js/keywords.js`: analisis de palabras clave y boton Actualizar (lee las hojas de Drive desde el navegador).
 - `data/drive-config.json`: IDs y nombres de las dos carpetas de Drive y `keywords.excludeCampaigns` (vacio).
 - `data/hers-lima-retail-2026.json`: fuente normalizada (`scripts/sync-drive.py`).

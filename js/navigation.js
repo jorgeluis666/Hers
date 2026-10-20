@@ -22,6 +22,13 @@
       source: 'Fuente: data/hers-palabras-clave-2026.json (Drive: Google Ads Hers Keywords)',
       footer: 'Sincronización diaria con Drive y botón Actualizar',
     },
+    'view-leads': {
+      title: 'Leads',
+      caption: 'CRM de feedback del cliente',
+      status: 'Leads reales frente a las plataformas',
+      source: 'Fuente: hoja privada del CRM y Gasto Publicitario',
+      footer: 'Los datos del cliente se guardan en la hoja de Google de la agencia, no en el repositorio',
+    },
   };
 
   function storedView() {
@@ -63,6 +70,7 @@
 
     if (viewId === 'view-projections') window.HersProjections?.init();
     if (viewId === 'view-keywords') window.HersKeywords?.init();
+    if (viewId === 'view-leads') window.HersLeads?.init();
     // Vuelve a poner el mes en la barra superior, que la vista anterior reemplazo.
     if (viewId === 'view-obj' && window.HersDashboard?.getData()) window.HersDashboard.render();
     window.setTimeout(() => window.dispatchEvent(new Event('resize')), 0);
