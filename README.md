@@ -8,7 +8,7 @@ activa desde el 7 de setiembre de 2026).
 Es una copia adaptada del tablero de SUMI (`jorgeluis666/SUMI`), que a su vez sale del de Aquarius, con los mismos
 modulos: Gasto Publicitario, Proyecciones, Palabras Clave y Usuarios y Claves.
 
-Version actual: `v1.5.0`.
+Version actual: `v1.5.1`.
 
 ## Acceso
 
@@ -22,10 +22,12 @@ Version actual: `v1.5.0`.
 `vMAJOR.MINOR.PATCH`: `MAJOR` para cambios incompatibles, `MINOR` para modulos o funciones nuevas y `PATCH`
 para correcciones. La version va en `package.json`, en los `?v=` de `index.html` y en la etiqueta de la barra
 lateral.
+`v1.5.1` alinea el formato con Royal Baby: `S/. ` en los montos, `—` para el dato vacio, Septiembre/Sep, tildes,
+pestanas de mes y tablas con su estilo, y los bordes y hovers azules que quedaban pasan al bordo de la marca.
 
 ## Modulo principal
 
-- Titulo: `Gasto Publicitario`
+- Titulo: `Gasto publicitario · Google Ads`
 - Subtitulo: `Leads en Google Ads` (el objetivo del contrato: leads con campanas de la red de busqueda).
 - La sincronizacion (boton Sincronizar, ultimo y proximo barrido, carpetas de Drive) esta en la pildora de la barra
   superior derecha (ver Sincronizacion > Manual, desde el tablero).
