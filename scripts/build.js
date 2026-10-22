@@ -59,6 +59,10 @@ function main() {
   // llega por HERS_DRIVE_API_KEY y solo queda dentro del HTML cifrado.
   const driveConfig = JSON.parse(readFile('data/drive-config.json'));
   driveConfig.apiKey = process.env.HERS_DRIVE_API_KEY || driveConfig.apiKey || '';
+  // Boton Sincronizar: el Web App del barrido (scripts/apps-script/sincronizar-hers.gs). La URL llega por
+  // HERS_SYNC_URL y, como la clave, solo queda dentro del HTML cifrado.
+  driveConfig.syncUrl = process.env.HERS_SYNC_URL || driveConfig.syncUrl || '';
+  if (driveConfig.syncUrl) console.log('[build] boton Sincronizar conectado al barrido de GitHub');
   const driveJson = JSON.stringify(driveConfig).replace(/</g, '\\u003c');
   if (driveConfig.apiKey) console.log('[build] sincronizacion desde el navegador habilitada');
   else console.warn('[build] sin HERS_DRIVE_API_KEY: el boton Sincronizar trae la ultima publicacion');
