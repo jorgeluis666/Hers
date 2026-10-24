@@ -22,6 +22,8 @@ Version actual: `v1.5.1`.
 `vMAJOR.MINOR.PATCH`: `MAJOR` para cambios incompatibles, `MINOR` para modulos o funciones nuevas y `PATCH`
 para correcciones. La version va en `package.json`, en los `?v=` de `index.html` y en la etiqueta de la barra
 lateral.
+`v1.6.0` cierra las carpetas de Drive: el barrido diario las lee por el Apps Script de Hers con una clave
+privada (ver "Carpetas privadas") y el boton Actualizar de Palabras Clave pide ese mismo barrido.
 `v1.5.1` alinea el formato con Royal Baby: `S/. ` en los montos, `—` para el dato vacio, Septiembre/Sep, tildes,
 pestanas de mes y tablas con su estilo, y los bordes y hovers azules que quedaban pasan al bordo de la marca.
 
@@ -213,27 +215,26 @@ carpeta de Drive **Google Ads Hers Keywords**, una hoja de calculo por mes (`Her
 
 ### Datos y sincronizacion
 
-- `scripts/sync-keywords.py` exporta cada hoja como CSV (`docs.google.com/spreadsheets/d/<id>/export?format=csv`,
-  sin credenciales mientras la carpeta siga compartida por enlace) y escribe
+- `scripts/sync-keywords.py` recibe cada hoja ya exportada como CSV del Apps Script de Hers (la carpeta es
+  privada, ver "Carpetas privadas") y escribe
   `data/hers-palabras-clave-2026.json`, `data/keywords-manifest.json` y una copia de cada informe en
   `data/csv-backups/keywords/`. El mes sale de la linea de rango del informe ("7 de septiembre de 2026 - ...")
   y, si no esta, del nombre del archivo. Reusa los helpers de `scripts/sync-drive.py`.
 - **Todos los dias**: es un paso mas de `.github/workflows/sync-drive.yml` (10:00 en Lima). Si cambio algo,
   hace commit y publica el tablero. Cada carpeta se sincroniza aunque la otra falle. Si la carpeta no trae
   ningun informe el paso falla (y el workflow queda en rojo), pero los meses ya cargados se conservan.
-- **Boton Actualizar** (en el filtro): el navegador vuelve a leer las hojas de Drive y repinta el modulo sin
-  recargar. La exportacion CSV de Sheets permite CORS, asi que **no necesita API key**; el resultado queda en
-  `localStorage` (`hers_keywords_cache`) y gana contra la publicacion mientras sea mas reciente. Sin API
-  key usa la lista de hojas que dejo la ultima sincronizacion diaria: una hoja de un mes nuevo aparece al dia
-  siguiente (o al correr el workflow a mano). Con `HERS_DRIVE_API_KEY` incrustada en el build, el boton tambien
-  lista la carpeta y encuentra los meses nuevos al instante.
+- **Boton Actualizar** (en el filtro): como el navegador ya no puede bajar las hojas privadas, pide el mismo
+  barrido del servidor que el boton Sincronizar (`HERS_SYNC_URL`), que trae tambien las palabras clave, y
+  muestra el avance en su propio estado. Sin esa URL trae la ultima publicacion. Solo con
+  `HERS_DRIVE_API_KEY` incrustada en el build lee Drive desde el navegador y guarda el resultado en
+  `localStorage` (`hers_keywords_cache`).
 - La carpeta y su ID estan en `data/drive-config.json` (`keywords.folderId`).
 - **Campanas excluidas**: `keywords.excludeCampaigns` en `data/drive-config.json` lista campanas que no se
   muestran ni se guardan aunque vengan en el informe (hoy ninguna). Se filtran en la sincronizacion diaria, en
   el boton Actualizar y al mostrar. La copia cruda del informe en `data/csv-backups/keywords/` las conserva.
-- Las hojas tienen que estar en **Google Ads Hers Keywords**, que es la carpeta compartida por enlace. Las otras
-  carpetas de Hers en Drive ("Términos de Búsqueda Hers" y "Google Ads Hers Segmentacion") no estan compartidas:
-  responden 401 y la sincronizacion no las puede leer.
+- Las hojas tienen que estar en **Google Ads Hers Keywords**. El Apps Script solo lee esa carpeta y la de
+  campanas (`CARPETAS_LECTURA`); las otras carpetas de Hers en Drive ("Términos de Búsqueda Hers" y
+  "Google Ads Hers Segmentacion") quedan fuera de la sincronizacion.
 
 ```bash
 python scripts/sync-keywords.py          # sincroniza
@@ -371,17 +372,33 @@ python scripts/sync-drive.py          # sincroniza
 python scripts/sync-drive.py --check  # dice si hay cambios, sin escribir
 ```
 
-El script encuentra los archivos en este orden: API de Drive (si hay API key),
-vista publica de la carpeta (sin credenciales, mientras siga compartida por
-enlace) y, como ultimo recurso, `data/drive-manifest.json`. Las hojas de calculo
-se exportan como CSV (`docs.google.com/spreadsheets/d/<id>/export?format=csv`).
+El script encuentra los archivos en este orden: Apps Script de Hers (si hay
+`HERS_DRIVE_SCRIPT_URL` y `HERS_DRIVE_READ_KEY`), API de Drive (si hay API key),
+vista publica de la carpeta (solo si siguiera compartida por enlace) y, como
+ultimo recurso, `data/drive-manifest.json`. Las hojas de calculo se exportan como
+CSV (`docs.google.com/spreadsheets/d/<id>/export?format=csv`).
+
+### Carpetas privadas
+
+Las carpetas de campanas y palabras clave no se comparten por enlace (sus IDs estan en este repositorio
+publico). El barrido las lee con la accion `leer` del mismo Web App del boton Sincronizar
+(`scripts/apps-script/sincronizar-hers.gs`), que corre con la cuenta duena de las carpetas:
+
+- Solo responde con la clave `LECTURA_CLAVE` de las Propiedades del script, enviada por POST (nunca en la
+  URL), y solo para las dos carpetas de `CARPETAS_LECTURA`. Devuelve cada hoja exportada como CSV.
+- En GitHub la clave es el secret `HERS_DRIVE_READ_KEY` y la URL es la de `HERS_SYNC_URL`
+  (`sync-drive.yml` la pasa como `HERS_DRIVE_SCRIPT_URL`).
+- Al editar el script hay que publicar una version nueva de la misma implementacion (Implementar >
+  Gestionar implementaciones > lapiz > Version: Nueva version), para que la URL no cambie, y ejecutar
+  `probarLectura` una vez para aceptar el permiso de Drive.
+- Para probar en local: `HERS_DRIVE_SCRIPT_URL=<url> HERS_DRIVE_READ_KEY=<clave> python scripts/sync-drive.py --check`.
 
 ### Manual, desde el tablero
 
 La sincronizacion vive en la barra superior derecha. La pildora dice hasta que dia
 llegan los datos y la hora del ultimo barrido; al pulsarla abre el detalle: datos, de
 donde salen (Origen), meses cargados, ultimo y proximo barrido, cuando cambiaron los
-datos, las dos carpetas de Drive (con enlace) y lo que falta subir. A su lado va el boton
+datos, las dos carpetas de Drive (con enlace, solo para quien tenga acceso) y lo que falta subir. A su lado va el boton
 **Sincronizar** (en Gasto Publicitario y Proyecciones; Palabras Clave tiene su propio
 boton Actualizar). Si la sincronizacion falla, la pildora se pone ambar y el detalle
 dice por que. Su comportamiento depende de `data/drive-config.json`:
