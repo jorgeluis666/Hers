@@ -71,12 +71,12 @@
       "sourceFile": "Hers octubre 2026",
       "driveFileId": "1EyEd6CUSbw7XNDcq4gNk_lNXlkgoiuoyk__KjMyKuPg",
       "totals": {
-        "cost": 82.48,
-        "impressions": 547,
-        "clicks": 105,
-        "ctr": 0.192,
-        "conversions": 43.72,
-        "costPerConversion": 1.89
+        "cost": 450.52,
+        "impressions": 5712,
+        "clicks": 685,
+        "conversions": 267.97,
+        "ctr": 0.11992296918767507,
+        "costPerConversion": 1.68
       },
       "period": {
         "start": "2026-10-01",
@@ -111,7 +111,7 @@
   "drive": {
     "folderId": "1sNZ2FuYWntAn9ARHiY-TLxcE9SqMJbLR",
     "discovery": "apps script",
-    "lastSync": "2026-10-25T06:37:27Z",
+    "lastSync": "2026-10-25T06:40:17Z",
     "files": [
       {
         "id": "1EyEd6CUSbw7XNDcq4gNk_lNXlkgoiuoyk__KjMyKuPg",
