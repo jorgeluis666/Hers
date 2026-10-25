@@ -220,7 +220,7 @@ carpeta de Drive **Google Ads Hers Keywords**, una hoja de calculo por mes (`Her
   `data/hers-palabras-clave-2026.json`, `data/keywords-manifest.json` y una copia de cada informe en
   `data/csv-backups/keywords/`. El mes sale de la linea de rango del informe ("7 de septiembre de 2026 - ...")
   y, si no esta, del nombre del archivo. Reusa los helpers de `scripts/sync-drive.py`.
-- **Todos los dias**: es un paso mas de `.github/workflows/sync-drive.yml` (10:00 en Lima). Si cambio algo,
+- **Todos los dias**: es un paso mas de `.github/workflows/sync-drive.yml` (06:30, 13:30 y 18:30 en Lima). Si cambio algo,
   hace commit y publica el tablero. Cada carpeta se sincroniza aunque la otra falle. Si la carpeta no trae
   ningun informe el paso falla (y el workflow queda en rojo), pero los meses ya cargados se conservan.
 - **Boton Actualizar** (en el filtro): como el navegador ya no puede bajar las hojas privadas, pide el mismo
@@ -337,7 +337,7 @@ habilitadas (ver Proyecciones); cada campana trae ademas su `status` y su `daily
 
 ### Automatica, todos los dias
 
-`.github/workflows/sync-drive.yml` corre todos los dias a las **10:00 de Lima**,
+`.github/workflows/sync-drive.yml` corre todos los dias a las **06:30, 13:30 y 18:30 de Lima**,
 baja las dos carpetas, actualiza `data/` y, solo si algo cambio, hace commit y pide la
 publicacion del tablero. Tambien se puede lanzar a mano desde
 **Actions > Sincronizar Drive > Run workflow**.
@@ -346,7 +346,7 @@ GitHub atrasa varias horas los workflows programados (en octubre de 2026 el de l
 06:20 corria entre las 10:50 y las 15:20), asi que la hora la fija un activador de
 **Google Apps Script** que lanza el workflow al momento
 (`scripts/apps-script/sincronizar-hers.gs`; Apps Script lo corre dentro de unos
-15 minutos de las 10:00). El workflow ya no tiene cron de GitHub: atrasaba varias
+15 minutos de cada horario). El workflow ya no tiene cron de GitHub: atrasaba varias
 horas y repetia el barrido. Si el activador falla, Apps Script avisa por correo y
 la pildora del tablero pasa a ambar a las 30 horas sin barrido. Instalacion, una
 sola vez:
@@ -405,7 +405,7 @@ boton Actualizar). Si la sincronizacion falla, la pildora se pone ambar y el det
 dice por que. Su comportamiento depende de `data/drive-config.json`:
 
 - **Con el Web App del barrido** (`HERS_SYNC_URL`, el que manda sobre los demas): el boton le pide a
-  `scripts/apps-script/sincronizar-hers.gs`, publicado como aplicacion web, el mismo barrido de las 10:00
+  `scripts/apps-script/sincronizar-hers.gs`, publicado como aplicacion web, el mismo barrido programado tres veces al día
   (`sync-drive.yml`). Sigue la corrida por la API publica de GitHub: si Drive trajo cambios espera la
   publicacion y recarga; si no, avisa que el tablero ya estaba al dia. Como mucho un barrido cada 4
   minutos para todos los visitantes. La URL llega por el secret `HERS_SYNC_URL` y solo queda dentro
@@ -500,3 +500,8 @@ Detalles:
 Para cambiar el isotipo por el logo real basta con reemplazar `assets/hers-isotipo.png` por otro PNG cuadrado
 del mismo tamano. Si cambia el color, hay que reemplazar `#8b1d41` y sus derivados (`#f8e8ee`, `#6b1632`,
 `#ecc6d3`, `#d38aa2` y `rgba(139, 29, 65, ...)`) en `css/dashboard.css` y en `js/`.
+
+
+Nexus extrae Google Ads a las 06:00, 13:00 y 18:00 (America/Lima).
+Los tres activadores de Apps Script barren Drive aproximadamente media hora después.
+El cambio de mes crea las hojas en las carpetas existentes; los meses ya configurados conservan sus enlaces.
