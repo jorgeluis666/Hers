@@ -394,7 +394,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 25,
-          "impressions": 142,
+          "impressions": 145,
           "cost": 16.13,
           "conversions": 7
         },
@@ -544,7 +544,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 46,
+          "impressions": 47,
           "cost": 6.4,
           "conversions": 2
         },
@@ -604,10 +604,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 488,
-          "impressions": 4118,
-          "cost": 307.56,
-          "conversions": 198.5
+          "clicks": 504,
+          "impressions": 4252,
+          "cost": 315.77,
+          "conversions": 199.5
         },
         {
           "state": "En pausa",
@@ -642,9 +642,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 112,
-          "impressions": 1245,
-          "cost": 74.23,
+          "clicks": 113,
+          "impressions": 1264,
+          "cost": 74.68,
           "conversions": 38.5
         },
         {
@@ -767,7 +767,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 39,
+          "impressions": 40,
           "cost": 4.51,
           "conversions": 5
         },
@@ -789,12 +789,12 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-10-27T11:24:27Z",
+    "lastSync": "2026-10-27T18:32:11Z",
     "files": [
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-10-27T11:01:25.540Z"
+        "modifiedTime": "2026-10-27T18:01:29.331Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
