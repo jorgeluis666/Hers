@@ -383,7 +383,7 @@
       "driveFileId": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
       "period": {
         "start": "2026-10-01",
-        "end": "2026-10-27"
+        "end": "2026-10-28"
       },
       "keywords": [
         {
@@ -604,10 +604,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 521,
-          "impressions": 4366,
-          "cost": 322.91,
-          "conversions": 204.5
+          "clicks": 530,
+          "impressions": 4402,
+          "cost": 325.28,
+          "conversions": 212.5
         },
         {
           "state": "En pausa",
@@ -642,9 +642,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 114,
-          "impressions": 1277,
-          "cost": 75.04,
+          "clicks": 115,
+          "impressions": 1286,
+          "cost": 75.29,
           "conversions": 38.5
         },
         {
@@ -692,7 +692,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 8,
-          "impressions": 43,
+          "impressions": 45,
           "cost": 4.74,
           "conversions": 3
         },
@@ -729,7 +729,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 13,
-          "impressions": 65,
+          "impressions": 66,
           "cost": 10.65,
           "conversions": 9
         },
@@ -789,12 +789,12 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-10-27T23:28:28Z",
+    "lastSync": "2026-10-28T11:24:32Z",
     "files": [
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-10-27T23:01:24.112Z"
+        "modifiedTime": "2026-10-28T11:01:23.323Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
