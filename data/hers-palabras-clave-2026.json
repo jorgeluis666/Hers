@@ -383,7 +383,7 @@
       "driveFileId": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
       "period": {
         "start": "2026-10-01",
-        "end": "2026-10-28"
+        "end": "2026-10-29"
       },
       "keywords": [
         {
@@ -394,7 +394,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 26,
-          "impressions": 150,
+          "impressions": 155,
           "cost": 16.61,
           "conversions": 7
         },
@@ -508,7 +508,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 2,
-          "impressions": 12,
+          "impressions": 13,
           "cost": 1.51,
           "conversions": 0
         },
@@ -604,10 +604,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 557,
-          "impressions": 4796,
-          "cost": 341.77,
-          "conversions": 221.5
+          "clicks": 570,
+          "impressions": 4904,
+          "cost": 349.69,
+          "conversions": 227.5
         },
         {
           "state": "En pausa",
@@ -642,9 +642,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 118,
-          "impressions": 1349,
-          "cost": 76.84,
+          "clicks": 119,
+          "impressions": 1380,
+          "cost": 77.41,
           "conversions": 38.5
         },
         {
@@ -789,12 +789,12 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-10-28T23:28:27Z",
+    "lastSync": "2026-10-29T11:24:29Z",
     "files": [
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-10-28T23:01:40.548Z"
+        "modifiedTime": "2026-10-29T11:01:21.863Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
