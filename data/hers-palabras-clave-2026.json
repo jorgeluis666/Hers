@@ -394,7 +394,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 26,
-          "impressions": 160,
+          "impressions": 162,
           "cost": 16.61,
           "conversions": 7
         },
@@ -544,7 +544,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 49,
+          "impressions": 50,
           "cost": 6.4,
           "conversions": 2
         },
@@ -604,10 +604,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 582,
-          "impressions": 5027,
-          "cost": 357.19,
-          "conversions": 229.5
+          "clicks": 593,
+          "impressions": 5158,
+          "cost": 363.88,
+          "conversions": 235.5
         },
         {
           "state": "En pausa",
@@ -643,9 +643,9 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 122,
-          "impressions": 1413,
+          "impressions": 1433,
           "cost": 78.85,
-          "conversions": 38.5
+          "conversions": 39.5
         },
         {
           "state": "Habilitado",
@@ -767,7 +767,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 41,
+          "impressions": 42,
           "cost": 4.51,
           "conversions": 5
         },
@@ -789,12 +789,12 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-10-29T18:32:13Z",
+    "lastSync": "2026-10-29T23:28:27Z",
     "files": [
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-10-29T18:01:50.803Z"
+        "modifiedTime": "2026-10-29T23:01:41.914Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
