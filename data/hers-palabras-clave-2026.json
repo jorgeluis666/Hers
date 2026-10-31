@@ -394,7 +394,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 38,
-          "impressions": 232,
+          "impressions": 245,
           "cost": 26.86,
           "conversions": 10
         },
@@ -544,7 +544,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 53,
+          "impressions": 55,
           "cost": 6.4,
           "conversions": 2
         },
@@ -556,7 +556,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 4,
-          "impressions": 31,
+          "impressions": 32,
           "cost": 2.9,
           "conversions": 1
         },
@@ -604,10 +604,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 692,
-          "impressions": 6013,
-          "cost": 466.91,
-          "conversions": 252.5
+          "clicks": 709,
+          "impressions": 6176,
+          "cost": 491.99,
+          "conversions": 259.5
         },
         {
           "state": "En pausa",
@@ -642,9 +642,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 135,
-          "impressions": 1618,
-          "cost": 91.67,
+          "clicks": 136,
+          "impressions": 1652,
+          "cost": 92.27,
           "conversions": 46.5
         },
         {
@@ -680,7 +680,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 5,
-          "impressions": 37,
+          "impressions": 38,
           "cost": 3.26,
           "conversions": 3
         },
@@ -789,12 +789,12 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-10-31T11:24:29Z",
+    "lastSync": "2026-10-31T18:32:10Z",
     "files": [
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-10-31T11:01:30.666Z"
+        "modifiedTime": "2026-10-31T18:01:33.535Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
