@@ -1,7 +1,7 @@
 Informe de palabras clave de búsqueda,,,,,,,,,,,,,,,,
 1 de noviembre de 2026 - 1 de noviembre de 2026,,,,,,,,,,,,,,,,
 Estado de palabras clave,Palabra clave,Tipo de concordancia,Campaña,Grupo de anuncios,Estado,Motivos del estado,URL final,Clics,Impr.,CTR,Código de moneda,Prom. CPC,Costo,Porcentaje de conv.,Conversiones,Costo/conv.
-Habilitado,venta de vales de pavo,Concordancia amplia,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,Apto,,,0,8,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
+Habilitado,venta de vales de pavo,Concordancia amplia,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,Apto,,,1,9,"11,11%",PEN,"0,74","0,74","0,00%","0,00","0,00"
 Habilitado,"""vales de pavo para empresas""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,Apto,,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
 En pausa,"""vales de pavo navideños""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,En pausa,"AD_GROUP_CRITERION_PAUSED, AD_GROUP_CRITERION_RARELY_SERVED",,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
 Habilitado,"""vales de pavo lima""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,No apto,AD_GROUP_CRITERION_RARELY_SERVED,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
@@ -18,10 +18,10 @@ Habilitado,"""vales de pavo""",Concordancia de frase,CE | Search | Canastas Navi
 En pausa,"""vales navideños para empresas""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,En pausa,"AD_GROUP_CRITERION_PAUSED, AD_GROUP_CRITERION_RARELY_SERVED",,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
 Habilitado,"""venta de vales de pavo""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,Apto,,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
 Habilitado,vales de pavo para empresas,Concordancia amplia,CE | Search | Canastas Navideñas | Lima,AG2 | Vales de Pavo,Apto,,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
-Habilitado,canastas navideñas,Concordancia amplia,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,Apto,,,10,107,"9,35%",PEN,"1,68","16,82","20,00%","2,00","8,41"
+Habilitado,canastas navideñas,Concordancia amplia,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,Apto,,,17,136,"12,50%",PEN,"1,69","28,76","17,65%","3,00","9,59"
 En pausa,"""canastas navideñas familiares""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,En pausa,AD_GROUP_CRITERION_PAUSED,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
 En pausa,"""empresa de canastas navideñas""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,En pausa,AD_GROUP_CRITERION_PAUSED,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
-Habilitado,venta de canastas navideñas,Concordancia amplia,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,Apto,,,8,31,"25,81%",PEN,"1,68","13,43","37,50%","3,00","4,48"
+Habilitado,venta de canastas navideñas,Concordancia amplia,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,Apto,,,7,36,"19,44%",PEN,"1,71","11,98","57,14%","4,00","3,00"
 Habilitado,[canastas navideñas],Concordancia exacta,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,Apto,,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
 En pausa,"""canastas navideñas empresariales""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,En pausa,AD_GROUP_CRITERION_PAUSED,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
 Habilitado,"""canastas navideñas para empresas""",Concordancia de frase,CE | Search | Canastas Navideñas | Lima,AG1 | Canastas Navideñas Empresariales,Apto,,,0,0,"0,00%",PEN,"0,00","0,00","0,00%","0,00","0,00"
