@@ -792,7 +792,7 @@
       "driveFileId": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
       "period": {
         "start": "2026-11-01",
-        "end": "2026-11-01"
+        "end": "2026-11-02"
       },
       "keywords": [
         {
@@ -1014,7 +1014,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 17,
-          "impressions": 136,
+          "impressions": 147,
           "cost": 28.76,
           "conversions": 3
         },
@@ -1052,7 +1052,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 36,
+          "impressions": 39,
           "cost": 11.98,
           "conversions": 4
         },
@@ -1198,17 +1198,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-01T23:28:30Z",
+    "lastSync": "2026-11-02T11:24:33Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-01T23:02:27.275Z"
+        "modifiedTime": "2026-11-02T11:02:28.506Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-01T23:02:16.055Z"
+        "modifiedTime": "2026-11-02T11:02:17.356Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
