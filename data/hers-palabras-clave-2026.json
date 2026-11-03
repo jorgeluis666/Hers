@@ -801,7 +801,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 2,
-          "impressions": 30,
+          "impressions": 31,
           "cost": 2.29,
           "conversions": 0
         },
@@ -1009,10 +1009,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 55,
-          "impressions": 574,
-          "cost": 55.93,
-          "conversions": 17
+          "clicks": 72,
+          "impressions": 669,
+          "cost": 65.18,
+          "conversions": 20
         },
         {
           "state": "En pausa",
@@ -1047,9 +1047,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 15,
-          "impressions": 152,
-          "cost": 19.66,
+          "clicks": 17,
+          "impressions": 185,
+          "cost": 20.77,
           "conversions": 7
         },
         {
@@ -1109,7 +1109,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 1,
-          "impressions": 2,
+          "impressions": 5,
           "cost": 0.49,
           "conversions": 0
         },
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-03T18:34:10Z",
+    "lastSync": "2026-11-03T23:28:32Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-03T18:02:36.655Z"
+        "modifiedTime": "2026-11-03T23:02:28.871Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-03T18:02:25.502Z"
+        "modifiedTime": "2026-11-03T23:02:17.608Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
