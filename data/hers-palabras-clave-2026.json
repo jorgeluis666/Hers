@@ -801,7 +801,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 6,
-          "impressions": 52,
+          "impressions": 59,
           "cost": 5.62,
           "conversions": 1
         },
@@ -913,7 +913,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 1,
-          "impressions": 1,
+          "impressions": 2,
           "cost": 0.82,
           "conversions": 0
         },
@@ -949,7 +949,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 14,
           "cost": 0,
           "conversions": 0
         },
@@ -961,7 +961,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "cost": 0,
           "conversions": 0
         },
@@ -1009,10 +1009,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 122,
-          "impressions": 1135,
-          "cost": 104.42,
-          "conversions": 43
+          "clicks": 134,
+          "impressions": 1298,
+          "cost": 114.42,
+          "conversions": 45
         },
         {
           "state": "En pausa",
@@ -1047,9 +1047,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 23,
-          "impressions": 326,
-          "cost": 24.82,
+          "clicks": 24,
+          "impressions": 374,
+          "cost": 25.64,
           "conversions": 8
         },
         {
@@ -1085,7 +1085,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 0,
-          "impressions": 0,
+          "impressions": 1,
           "cost": 0,
           "conversions": 0
         },
@@ -1097,7 +1097,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 4,
           "cost": 0,
           "conversions": 0
         },
@@ -1109,7 +1109,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 1,
-          "impressions": 8,
+          "impressions": 9,
           "cost": 0.49,
           "conversions": 0
         },
@@ -1172,7 +1172,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 1,
-          "impressions": 10,
+          "impressions": 12,
           "cost": 0.43,
           "conversions": 0
         },
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-05T11:24:31Z",
+    "lastSync": "2026-11-05T18:32:13Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-05T11:02:42.238Z"
+        "modifiedTime": "2026-11-05T18:02:38.701Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-05T11:02:31.069Z"
+        "modifiedTime": "2026-11-05T18:02:27.491Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
