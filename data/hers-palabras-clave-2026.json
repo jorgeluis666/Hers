@@ -913,7 +913,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 1,
-          "impressions": 4,
+          "impressions": 5,
           "cost": 0.82,
           "conversions": 0
         },
@@ -1009,9 +1009,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 155,
-          "impressions": 1482,
-          "cost": 129.29,
+          "clicks": 159,
+          "impressions": 1539,
+          "cost": 131.09,
           "conversions": 55
         },
         {
@@ -1047,9 +1047,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 32,
-          "impressions": 458,
-          "cost": 31.8,
+          "clicks": 34,
+          "impressions": 477,
+          "cost": 33.19,
           "conversions": 10
         },
         {
@@ -1099,7 +1099,7 @@
           "clicks": 1,
           "impressions": 9,
           "cost": 0.3,
-          "conversions": 0
+          "conversions": 1
         },
         {
           "state": "Habilitado",
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-06T11:24:30Z",
+    "lastSync": "2026-11-06T18:32:13Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-06T11:02:34.428Z"
+        "modifiedTime": "2026-11-06T18:03:35.598Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-06T11:02:23.251Z"
+        "modifiedTime": "2026-11-06T18:03:24.455Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
