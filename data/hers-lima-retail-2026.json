@@ -91,31 +91,31 @@
         {
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "type": "Búsqueda",
-          "cost": 174.33,
-          "impressions": 2136,
-          "ctr": 0.0964,
-          "clicks": 206,
-          "costPerConversion": 2.6,
-          "conversions": 67,
+          "cost": 180.18,
+          "impressions": 2307,
+          "ctr": 0.0949,
+          "clicks": 219,
+          "costPerConversion": 2.65,
+          "conversions": 68,
           "status": "Habilitada",
           "dailyBudget": 25.5,
-          "costDelta": -0.7823350938307675,
-          "ctrDelta": -0.16246741963509992,
-          "clicksDelta": -0.8120437956204379,
-          "conversionsDelta": -0.8329052048781704,
-          "costPerConversionDelta": 0.30000000000000004,
-          "impressionsDelta": -0.775748031496063
+          "costDelta": -0.7750309023485784,
+          "ctrDelta": -0.1754995655951347,
+          "clicksDelta": -0.8001824817518248,
+          "conversionsDelta": -0.830411252712173,
+          "costPerConversionDelta": 0.32499999999999996,
+          "impressionsDelta": -0.7577952755905512
         }
       ],
       "sourceFile": "Hers noviembre 2026",
       "driveFileId": "1mR6RV2WsXxaf4am9WCBvwlB0qGEJo2Mz89HmJSIxr-s",
       "totals": {
-        "cost": 174.33,
-        "impressions": 2136,
-        "clicks": 206,
-        "conversions": 67,
-        "ctr": 0.09644194756554307,
-        "costPerConversion": 2.6
+        "cost": 180.18,
+        "impressions": 2307,
+        "clicks": 219,
+        "conversions": 68,
+        "ctr": 0.09492847854356307,
+        "costPerConversion": 2.65
       },
       "period": {
         "start": "2026-11-01",
@@ -131,36 +131,36 @@
     {
       "campaign": "CE | Search | Canastas Navideñas | Lima",
       "type": "Búsqueda",
-      "cost": 174.33,
-      "impressions": 2136,
-      "ctr": 0.0964,
-      "clicks": 206,
-      "costPerConversion": 2.6,
-      "conversions": 67,
+      "cost": 180.18,
+      "impressions": 2307,
+      "ctr": 0.0949,
+      "clicks": 219,
+      "costPerConversion": 2.65,
+      "conversions": 68,
       "status": "Habilitada",
       "dailyBudget": 25.5,
-      "costDelta": -0.7823350938307675,
-      "ctrDelta": -0.16246741963509992,
-      "clicksDelta": -0.8120437956204379,
-      "conversionsDelta": -0.8329052048781704,
-      "costPerConversionDelta": 0.30000000000000004,
-      "impressionsDelta": -0.775748031496063
+      "costDelta": -0.7750309023485784,
+      "ctrDelta": -0.1754995655951347,
+      "clicksDelta": -0.8001824817518248,
+      "conversionsDelta": -0.830411252712173,
+      "costPerConversionDelta": 0.32499999999999996,
+      "impressionsDelta": -0.7577952755905512
     }
   ],
   "drive": {
     "folderId": "1sNZ2FuYWntAn9ARHiY-TLxcE9SqMJbLR",
     "discovery": "apps script",
-    "lastSync": "2026-11-06T18:32:08Z",
+    "lastSync": "2026-11-06T23:28:25Z",
     "files": [
       {
         "id": "1mR6RV2WsXxaf4am9WCBvwlB0qGEJo2Mz89HmJSIxr-s",
         "name": "Hers noviembre 2026",
-        "modifiedTime": "2026-11-06T18:03:13.271Z"
+        "modifiedTime": "2026-11-06T23:02:10.050Z"
       },
       {
         "id": "1EyEd6CUSbw7XNDcq4gNk_lNXlkgoiuoyk__KjMyKuPg",
         "name": "Hers octubre 2026",
-        "modifiedTime": "2026-11-06T18:03:00.993Z"
+        "modifiedTime": "2026-11-06T23:01:58.865Z"
       },
       {
         "id": "1TV1uqJomZbE4GrQkdOXsXPgN78dHbY7PNSnEIZGjcmY",
