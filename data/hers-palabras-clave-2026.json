@@ -1009,10 +1009,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 190,
-          "impressions": 1828,
-          "cost": 146.34,
-          "conversions": 69
+          "clicks": 199,
+          "impressions": 1884,
+          "cost": 150.48,
+          "conversions": 72
         },
         {
           "state": "En pausa",
@@ -1047,9 +1047,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 35,
-          "impressions": 547,
-          "cost": 33.64,
+          "clicks": 40,
+          "impressions": 565,
+          "cost": 37.34,
           "conversions": 11
         },
         {
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-07T18:32:11Z",
+    "lastSync": "2026-11-07T23:28:29Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-07T18:02:27.665Z"
+        "modifiedTime": "2026-11-07T23:02:32.553Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-07T18:02:16.428Z"
+        "modifiedTime": "2026-11-07T23:02:21.403Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
