@@ -56,15 +56,15 @@
           "impressions": 9525,
           "ctr": 0.1151,
           "clicks": 1096,
-          "costPerConversion": 2,
-          "conversions": 400.97,
+          "costPerConversion": 1.99,
+          "conversions": 401.97,
           "status": "Habilitada",
           "dailyBudget": 25.5,
           "costDelta": 0.73631495653305,
           "ctrDelta": -0.15055350553505542,
           "clicksDelta": 1.2505133470225873,
-          "conversionsDelta": 1.9694882618677334,
-          "costPerConversionDelta": -0.41520467836257313,
+          "conversionsDelta": 1.9768940235503223,
+          "costPerConversionDelta": -0.41812865497076024,
           "impressionsDelta": 1.6509880322849986
         }
       ],
@@ -74,9 +74,9 @@
         "cost": 800.91,
         "impressions": 9525,
         "clicks": 1096,
-        "conversions": 400.97,
+        "conversions": 401.97,
         "ctr": 0.11506561679790027,
-        "costPerConversion": 2.0
+        "costPerConversion": 1.99
       },
       "period": {
         "start": "2026-10-01",
@@ -91,35 +91,35 @@
         {
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "type": "Búsqueda",
-          "cost": 180.18,
-          "impressions": 2307,
-          "ctr": 0.0949,
-          "clicks": 219,
-          "costPerConversion": 2.65,
-          "conversions": 68,
+          "cost": 185.27,
+          "impressions": 2422,
+          "ctr": 0.09539999999999998,
+          "clicks": 231,
+          "costPerConversion": 2.32,
+          "conversions": 80,
           "status": "Habilitada",
           "dailyBudget": 25.5,
-          "costDelta": -0.7750309023485784,
-          "ctrDelta": -0.1754995655951347,
-          "clicksDelta": -0.8001824817518248,
-          "conversionsDelta": -0.830411252712173,
-          "costPerConversionDelta": 0.32499999999999996,
-          "impressionsDelta": -0.7577952755905512
+          "costDelta": -0.7686756314692038,
+          "ctrDelta": -0.17115551694178988,
+          "clicksDelta": -0.7892335766423357,
+          "conversionsDelta": -0.8009801726497002,
+          "costPerConversionDelta": 0.16582914572864316,
+          "impressionsDelta": -0.7457217847769029
         }
       ],
       "sourceFile": "Hers noviembre 2026",
       "driveFileId": "1mR6RV2WsXxaf4am9WCBvwlB0qGEJo2Mz89HmJSIxr-s",
       "totals": {
-        "cost": 180.18,
-        "impressions": 2307,
-        "clicks": 219,
-        "conversions": 68,
-        "ctr": 0.09492847854356307,
-        "costPerConversion": 2.65
+        "cost": 185.27,
+        "impressions": 2422,
+        "clicks": 231,
+        "conversions": 80,
+        "ctr": 0.0953757225433526,
+        "costPerConversion": 2.32
       },
       "period": {
         "start": "2026-11-01",
-        "end": "2026-11-06"
+        "end": "2026-11-07"
       },
       "dailyBudget": 25.5
     }
@@ -131,36 +131,36 @@
     {
       "campaign": "CE | Search | Canastas Navideñas | Lima",
       "type": "Búsqueda",
-      "cost": 180.18,
-      "impressions": 2307,
-      "ctr": 0.0949,
-      "clicks": 219,
-      "costPerConversion": 2.65,
-      "conversions": 68,
+      "cost": 185.27,
+      "impressions": 2422,
+      "ctr": 0.09539999999999998,
+      "clicks": 231,
+      "costPerConversion": 2.32,
+      "conversions": 80,
       "status": "Habilitada",
       "dailyBudget": 25.5,
-      "costDelta": -0.7750309023485784,
-      "ctrDelta": -0.1754995655951347,
-      "clicksDelta": -0.8001824817518248,
-      "conversionsDelta": -0.830411252712173,
-      "costPerConversionDelta": 0.32499999999999996,
-      "impressionsDelta": -0.7577952755905512
+      "costDelta": -0.7686756314692038,
+      "ctrDelta": -0.17115551694178988,
+      "clicksDelta": -0.7892335766423357,
+      "conversionsDelta": -0.8009801726497002,
+      "costPerConversionDelta": 0.16582914572864316,
+      "impressionsDelta": -0.7457217847769029
     }
   ],
   "drive": {
     "folderId": "1sNZ2FuYWntAn9ARHiY-TLxcE9SqMJbLR",
     "discovery": "apps script",
-    "lastSync": "2026-11-06T23:28:25Z",
+    "lastSync": "2026-11-07T11:24:27Z",
     "files": [
       {
         "id": "1mR6RV2WsXxaf4am9WCBvwlB0qGEJo2Mz89HmJSIxr-s",
         "name": "Hers noviembre 2026",
-        "modifiedTime": "2026-11-06T23:02:10.050Z"
+        "modifiedTime": "2026-11-07T11:02:05.577Z"
       },
       {
         "id": "1EyEd6CUSbw7XNDcq4gNk_lNXlkgoiuoyk__KjMyKuPg",
         "name": "Hers octubre 2026",
-        "modifiedTime": "2026-11-06T23:01:58.865Z"
+        "modifiedTime": "2026-11-07T11:01:54.370Z"
       },
       {
         "id": "1TV1uqJomZbE4GrQkdOXsXPgN78dHbY7PNSnEIZGjcmY",
