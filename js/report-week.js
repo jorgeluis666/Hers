@@ -49,9 +49,10 @@
   // ── El mes del reporte ─────────────────────────────────────────────────
   function months() {
     if (!G()) return [];
-    return G().months().slice().reverse().map(month => {
-      const period = G().period(month.key);
+    return G().months().slice().reverse().map(source => {
+      const period = G().reportPeriod(source.key);
       if (!period) return null;
+      const month = period.month;
       const from = month.firstDay;
       const to = month.lastDay;
       const short = month.shortName.toLowerCase();
@@ -63,11 +64,11 @@
         from,
         to,
         days: to - from + 1,
-        option: `${month.name} ${month.year}${period.closed ? '' : ` · ${from}–${to} (en curso)`}`,
+        option: `${month.name} ${month.year}${period.closed ? '' : to ? ` · ${from}–${to} (en curso)` : ' · pendiente de cierre semanal'}`,
         labels: {
           cover: period.closed ? `${month.name} ${month.year}` : `${range} ${month.name} ${month.year}`,
           window: period.closed ? `${month.name.toLowerCase()} completo` : `${range} ${short}.`,
-          source: `Fuente: Google Ads · ${range} ${short} ${month.year}`,
+          source: `Fuente: Google Ads · ${range} ${short} ${month.year}${period.capturedAt ? ` · Captura: ${new Date(period.capturedAt).toLocaleString('es-PE', { timeZone: 'America/Lima', dateStyle: 'short', timeStyle: 'short' })} (Lima)` : ''}`,
           analysisSource: `Fuente: análisis Lima Retail sobre Google Ads · ${range} ${short} ${month.year}`,
           footer: `${BRAND} · Reporte Google Ads · ${period.closed ? `${month.name} ${month.year}` : `${from}-${to} ${month.name} ${month.year}`}`,
           note: `**Datos del período ${range} de ${month.name.toLowerCase()}.** Las conversiones son contactos generados por la campaña de búsqueda.`,
@@ -514,6 +515,12 @@
     if (select) {
       select.innerHTML = available.map(entry => `<option value="${esc(entry.id)}"${entry.id === state.month ? ' selected' : ''}>${esc(entry.option)}</option>`).join('');
     }
+    const print = document.getElementById('week-print');
+    if (print) print.disabled = Boolean(item.period.unavailable);
+    if (item.period.unavailable) {
+      host.innerHTML = `<div class="panel">${esc(item.period.unavailable)}</div>`;
+      return;
+    }
     const report = buildReport(item);
     const notes = readNotes()[item.id] || {};
     const total = 6;
@@ -533,7 +540,7 @@
   // El nombre del PDF lo pone el navegador con el titulo del documento: se cambia solo mientras imprime.
   function printReport() {
     const item = months().find(entry => entry.id === state.month);
-    if (!item) return;
+    if (!item || item.period.unavailable) return;
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
     const title = document.title;
     document.title = `Reporte_Hers_${item.labels.file}`;

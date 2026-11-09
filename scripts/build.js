@@ -45,6 +45,9 @@ function main() {
   const data = readFile('data/hers-lima-retail-2026.json').replace(/</g, '\\u003c');
   const keywords = readFile('data/hers-palabras-clave-2026.json').replace(/</g, '\\u003c');
 
+  const snapshots = readFile('data/report-snapshots.json').replace(/</g, '\\u003c');
+  html = html.replace('</head>', () => `<script>window.HERS_REPORT_SNAPSHOTS = ${snapshots};</script></head>`);
+
   // Los assets llevan ?v=<version> para evitar caches viejos, asi que el build ubica cada etiqueta
   // ignorando ese sufijo. Reemplazos con funcion: una cadena de reemplazo interpretaria "$'" o "$&"
   // dentro del codigo o de los datos.
