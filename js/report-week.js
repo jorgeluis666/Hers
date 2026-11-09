@@ -147,7 +147,7 @@
     const high = current.conversionRate >= 0.3;
     const share = current.conversionRate >= 0.5 ? 'más de la mitad' : 'buena parte';
     const channel = current.costPerConversion < 5 ? 'es muy eficiente para captar' : 'capta';
-    return `${count(current.conversions)} contactos a ${money2(current.costPerConversion)} con una tasa de conversión ${high ? 'altísima' : 'de'} (${rate(current.conversionRate)})${high ? `: ${share} de los clics se convierten en contacto` : ''}. El canal de búsqueda ${channel} demanda B2B de seguridad industrial.`;
+    return `${count(current.conversions)} contactos a ${money2(current.costPerConversion)} con una tasa de conversión ${high ? 'altísima' : 'de'} (${rate(current.conversionRate)})${high ? `: ${share} de los clics se convierten en contacto` : ''}. El canal de búsqueda ${channel} demanda de productos de Hers.`;
   }
 
   function suggestCampaigns(report) {
@@ -155,7 +155,7 @@
     if (!rows.length) return '**Qué funciona:** sin campañas con inversión en el período.';
     if (rows.length === 1) {
       const [only] = rows;
-      return `**Qué funciona:** la campaña ${only.conversions > 0 ? `rinde ${only.costPerConversion < 5 ? 'muy bien' : 'bien'} — ${count(only.conversions)} contactos a ${money2(only.costPerConversion)}` : 'todavía no registra contactos'}. **Qué hacemos:** ${only.conversions > 0 ? 'el canal capta demanda B2B de forma eficiente; conviene sostener la inversión y ampliar presupuesto en los términos de mejor conversión para escalar los contactos.' : 'revisar la medición de conversiones y los términos antes de subir la inversión.'}`;
+      return `**Qué funciona:** la campaña ${only.conversions > 0 ? `rinde ${only.costPerConversion < 5 ? 'muy bien' : 'bien'} — ${count(only.conversions)} contactos a ${money2(only.costPerConversion)}` : 'todavía no registra contactos'}. **Qué hacemos:** ${only.conversions > 0 ? 'el canal capta demanda con intención de compra; conviene sostener la inversión y ampliar presupuesto en los términos de mejor conversión para escalar los contactos.' : 'revisar la medición de conversiones y los términos antes de subir la inversión.'}`;
     }
     const converting = rows.filter(row => row.conversions > 0).sort((left, right) => right.conversions - left.conversions);
     const wasted = rows.filter(row => !(row.conversions > 0) && row.cost > 0);
@@ -172,7 +172,7 @@
     // El mas barato entre los terminos de la tabla, para que el texto hable de lo que se ve en la lamina.
     const cheapest = converting.slice(0, MAX_ROWS).filter(row => isNum(row.costPerConversion) && row !== top).sort((left, right) => left.costPerConversion - right.costPerConversion)[0];
     if (cheapest) parts.push(`"${cheapest.keyword}" es el más barato (${money2(cheapest.costPerConversion)}).`);
-    parts.push('El foco de demanda está en calzado de seguridad y EPP.');
+    parts.push('La demanda se concentra en los términos de compra que se muestran en la tabla.');
     return parts.join(' ');
   }
 
