@@ -1,6 +1,7 @@
 (function () {
   const VIEW_KEY = 'hers-active-view';
   const VIEW_META = {
+    "view-week": { title: "Archivo de Reportes", caption: "Generación de Reporte en PDF", status: "Generador de Hers", source: "Fuente: Google Ads", footer: "Reporte de publicidad" },
     'view-obj': {
       title: 'Gasto publicitario',
       caption: 'Leads en Google Ads',
@@ -68,6 +69,7 @@
     document.body.dataset.view = viewId;
     saveView(viewId);
 
+    if (viewId === 'view-week') window.HersReport?.init();
     if (viewId === 'view-projections') window.HersProjections?.init();
     if (viewId === 'view-keywords') window.HersKeywords?.init();
     if (viewId === 'view-leads') window.HersLeads?.init();

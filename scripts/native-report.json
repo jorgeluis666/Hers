@@ -1,0 +1,11 @@
+{
+  "brand": "hers",
+  "kind": "hers",
+  "data": "HersGasto",
+  "module": "HersReport",
+  "periodSource": "data/hers-lima-retail-2026.json",
+  "snapshotFiles": [
+    "data/hers-lima-retail-2026.json",
+    "data/hers-palabras-clave-2026.json"
+  ]
+}

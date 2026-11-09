@@ -2072,6 +2072,17 @@
 
   // Interfaz publica del modulo: drive-sync.js la usa para pintar la data que
   // acaba de traer de Drive sin recargar la pagina.
+  window.HersGasto = {
+    months: () => gasto.months.filter(month => month.hasData),
+    period: key => periodOf(gastoMonthByKey(key)),
+    totals: periodTotals,
+    previous: previousTotals,
+    campaigns: periodCampaigns,
+    keywords: period => (gasto.kwMonths && gasto.kwMonths.size ? keywordRows(keywordScope(period).months) : null),
+    keywordLabel: period => (gasto.kwMonths && gasto.kwMonths.size ? keywordScope(period).label : ''),
+    campaignLabel
+  };
+
   window.HersDashboard = {
     getData: () => state.data,
     applyData(data) {

@@ -8,3 +8,5 @@ credentials/
 .claude/
 __pycache__/
 *.pyc
+
+native-report-output/
