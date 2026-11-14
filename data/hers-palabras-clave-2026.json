@@ -790,7 +790,7 @@
       "driveFileId": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
       "period": {
         "start": "2026-11-01",
-        "end": "2026-11-13"
+        "end": "2026-11-14"
       },
       "keywords": [
         {
@@ -801,7 +801,7 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 9,
-          "impressions": 87,
+          "impressions": 88,
           "cost": 7.89,
           "conversions": 1
         },
@@ -1009,10 +1009,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 487,
-          "impressions": 4555,
-          "cost": 294.41,
-          "conversions": 166
+          "clicks": 500,
+          "impressions": 4675,
+          "cost": 300.98,
+          "conversions": 171
         },
         {
           "state": "En pausa",
@@ -1047,10 +1047,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 75,
-          "impressions": 1296,
-          "cost": 54.88,
-          "conversions": 24
+          "clicks": 77,
+          "impressions": 1345,
+          "cost": 55.74,
+          "conversions": 26
         },
         {
           "state": "Habilitado",
@@ -1108,9 +1108,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 4,
+          "clicks": 5,
           "impressions": 45,
-          "cost": 1.65,
+          "cost": 2.05,
           "conversions": 0
         },
         {
@@ -1171,9 +1171,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 3,
-          "impressions": 30,
-          "cost": 1.21,
+          "clicks": 4,
+          "impressions": 32,
+          "cost": 1.61,
           "conversions": 2
         },
         {
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-13T23:28:29Z",
+    "lastSync": "2026-11-14T11:24:30Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-13T23:02:32.467Z"
+        "modifiedTime": "2026-11-14T11:02:27.534Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-13T23:02:21.279Z"
+        "modifiedTime": "2026-11-14T11:02:16.381Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
