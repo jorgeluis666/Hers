@@ -790,7 +790,7 @@
       "driveFileId": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
       "period": {
         "start": "2026-11-01",
-        "end": "2026-11-14"
+        "end": "2026-11-15"
       },
       "keywords": [
         {
@@ -1009,10 +1009,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 530,
-          "impressions": 4920,
-          "cost": 317.67,
-          "conversions": 181
+          "clicks": 547,
+          "impressions": 5014,
+          "cost": 327.76,
+          "conversions": 190
         },
         {
           "state": "En pausa",
@@ -1047,10 +1047,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 81,
-          "impressions": 1419,
-          "cost": 57.52,
-          "conversions": 27
+          "clicks": 85,
+          "impressions": 1464,
+          "cost": 59.38,
+          "conversions": 28
         },
         {
           "state": "Habilitado",
@@ -1109,7 +1109,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 5,
-          "impressions": 48,
+          "impressions": 50,
           "cost": 2.05,
           "conversions": 0
         },
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-14T23:28:35Z",
+    "lastSync": "2026-11-15T11:24:30Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-14T23:02:25.384Z"
+        "modifiedTime": "2026-11-15T11:02:26.933Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-14T23:02:14.091Z"
+        "modifiedTime": "2026-11-15T11:02:15.800Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
