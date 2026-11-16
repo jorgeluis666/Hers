@@ -1009,10 +1009,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 588,
-          "impressions": 5336,
-          "cost": 347.98,
-          "conversions": 204
+          "clicks": 597,
+          "impressions": 5430,
+          "cost": 353.3,
+          "conversions": 206
         },
         {
           "state": "En pausa",
@@ -1047,9 +1047,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 95,
-          "impressions": 1574,
-          "cost": 64.05,
+          "clicks": 99,
+          "impressions": 1629,
+          "cost": 66.74,
           "conversions": 35
         },
         {
@@ -1096,9 +1096,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 3,
-          "impressions": 29,
-          "cost": 1.8,
+          "clicks": 4,
+          "impressions": 33,
+          "cost": 2.49,
           "conversions": 2
         },
         {
@@ -1109,7 +1109,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 59,
+          "impressions": 62,
           "cost": 2.95,
           "conversions": 0
         },
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-16T18:32:19Z",
+    "lastSync": "2026-11-16T23:02:42Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-16T18:02:38.125Z"
+        "modifiedTime": "2026-11-16T22:54:26.773Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-16T18:02:26.811Z"
+        "modifiedTime": "2026-11-16T22:53:55.363Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
