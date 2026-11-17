@@ -1009,10 +1009,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 618,
-          "impressions": 5668,
-          "cost": 365.58,
-          "conversions": 217
+          "clicks": 628,
+          "impressions": 5755,
+          "cost": 371.43,
+          "conversions": 221
         },
         {
           "state": "En pausa",
@@ -1047,10 +1047,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 108,
-          "impressions": 1757,
-          "cost": 72.91,
-          "conversions": 38
+          "clicks": 113,
+          "impressions": 1816,
+          "cost": 76.27,
+          "conversions": 39
         },
         {
           "state": "Habilitado",
@@ -1096,9 +1096,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 8,
-          "impressions": 62,
-          "cost": 4.97,
+          "clicks": 9,
+          "impressions": 81,
+          "cost": 5.76,
           "conversions": 4
         },
         {
@@ -1109,7 +1109,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 8,
-          "impressions": 73,
+          "impressions": 75,
           "cost": 3.59,
           "conversions": 0
         },
@@ -1134,7 +1134,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 1,
-          "impressions": 10,
+          "impressions": 17,
           "cost": 0.39,
           "conversions": 0
         },
@@ -1194,17 +1194,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-17T18:32:14Z",
+    "lastSync": "2026-11-17T23:28:31Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-17T18:09:43.079Z"
+        "modifiedTime": "2026-11-17T23:09:00.442Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-17T18:08:59.730Z"
+        "modifiedTime": "2026-11-17T23:08:16.984Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
