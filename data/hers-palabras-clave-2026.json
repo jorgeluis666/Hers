@@ -399,12 +399,13 @@
           "conversions": 12
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"vales de pavo para empresas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 2,
           "impressions": 14,
           "cost": 1.14,
@@ -424,12 +425,13 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"vales de pavo lima\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 0,
           "impressions": 1,
           "cost": 0,
@@ -487,12 +489,13 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "vales de pavo",
           "matchType": "Concordancia amplia",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 1,
           "impressions": 8,
           "cost": 1.12,
@@ -511,12 +514,13 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"pavos para empresas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 0,
           "impressions": 3,
           "cost": 0,
@@ -535,24 +539,26 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"vale de pavo\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 7,
           "impressions": 55,
           "cost": 6.4,
           "conversions": 2
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"vales de pavo\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 5,
           "impressions": 37,
           "cost": 4.13,
@@ -572,12 +578,13 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"venta de vales de pavo\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 0,
           "impressions": 17,
           "cost": 0,
@@ -597,6 +604,18 @@
         },
         {
           "state": "Habilitado",
+          "keyword": "\"para armar\"",
+          "matchType": "Concordancia de frase",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 0,
+          "impressions": 0,
+          "cost": 0,
+          "conversions": 0
+        },
+        {
+          "state": "Habilitado",
           "keyword": "canastas navideñas",
           "matchType": "Concordancia amplia",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
@@ -606,6 +625,30 @@
           "impressions": 6469,
           "cost": 532.18,
           "conversions": 271.5
+        },
+        {
+          "state": "Habilitado",
+          "keyword": "[catalogo de canastas navideñas 2025]",
+          "matchType": "Concordancia exacta",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 0,
+          "impressions": 0,
+          "cost": 0,
+          "conversions": 0
+        },
+        {
+          "state": "Habilitado",
+          "keyword": "[canastas navideñas 2026]",
+          "matchType": "Concordancia exacta",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 0,
+          "impressions": 0,
+          "cost": 0,
+          "conversions": 0
         },
         {
           "state": "En pausa",
@@ -635,6 +678,18 @@
         },
         {
           "state": "Habilitado",
+          "keyword": "[precio de canasta navideña 2025]",
+          "matchType": "Concordancia exacta",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 0,
+          "impressions": 0,
+          "cost": 0,
+          "conversions": 0
+        },
+        {
+          "state": "Habilitado",
           "keyword": "venta de canastas navideñas",
           "matchType": "Concordancia amplia",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
@@ -644,18 +699,6 @@
           "impressions": 1716,
           "cost": 101.53,
           "conversions": 48.5
-        },
-        {
-          "state": "Habilitado",
-          "keyword": "[canastas navideñas]",
-          "matchType": "Concordancia exacta",
-          "campaign": "CE | Search | Canastas Navideñas | Lima",
-          "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
-          "clicks": 0,
-          "impressions": 0,
-          "cost": 0,
-          "conversions": 0
         },
         {
           "state": "En pausa",
@@ -671,12 +714,13 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"canastas navideñas para empresas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 5,
           "impressions": 38,
           "cost": 3.26,
@@ -695,37 +739,38 @@
           "conversions": 3
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"venta de canastas navideñas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 115,
           "impressions": 707,
           "cost": 86.5,
           "conversions": 43.97
         },
         {
-          "state": "En pausa",
+          "state": "Habilitado",
           "keyword": "\"canastas navideñas corporativas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "En pausa",
-          "reasons": "AD_GROUP_CRITERION_PAUSED",
+          "status": "Apto",
           "clicks": 0,
           "impressions": 0,
           "cost": 0,
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"proveedores de canastas navideñas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 14,
           "impressions": 67,
           "cost": 11.47,
@@ -771,6 +816,18 @@
         },
         {
           "state": "Habilitado",
+          "keyword": "canasta navideña",
+          "matchType": "Concordancia amplia",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 0,
+          "impressions": 0,
+          "cost": 0,
+          "conversions": 0
+        },
+        {
+          "state": "Habilitado",
           "keyword": "[makro canastas navideñas]",
           "matchType": "Concordancia exacta",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
@@ -790,7 +847,7 @@
       "driveFileId": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
       "period": {
         "start": "2026-11-01",
-        "end": "2026-11-19"
+        "end": "2026-11-20"
       },
       "keywords": [
         {
@@ -801,21 +858,9 @@
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
           "clicks": 11,
-          "impressions": 100,
+          "impressions": 102,
           "cost": 8.7,
           "conversions": 2
-        },
-        {
-          "state": "Habilitado",
-          "keyword": "\"vales de pavo para empresas\"",
-          "matchType": "Concordancia de frase",
-          "campaign": "CE | Search | Canastas Navideñas | Lima",
-          "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
-          "clicks": 0,
-          "impressions": 0,
-          "cost": 0,
-          "conversions": 0
         },
         {
           "state": "En pausa",
@@ -831,12 +876,13 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"vales de pavo lima\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 0,
           "impressions": 1,
           "cost": 0,
@@ -895,18 +941,6 @@
         },
         {
           "state": "Habilitado",
-          "keyword": "vales de pavo",
-          "matchType": "Concordancia amplia",
-          "campaign": "CE | Search | Canastas Navideñas | Lima",
-          "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
-          "clicks": 0,
-          "impressions": 0,
-          "cost": 0,
-          "conversions": 0
-        },
-        {
-          "state": "Habilitado",
           "keyword": "pavos para empresas",
           "matchType": "Concordancia amplia",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
@@ -915,18 +949,6 @@
           "clicks": 2,
           "impressions": 8,
           "cost": 1.36,
-          "conversions": 0
-        },
-        {
-          "state": "Habilitado",
-          "keyword": "\"pavos para empresas\"",
-          "matchType": "Concordancia de frase",
-          "campaign": "CE | Search | Canastas Navideñas | Lima",
-          "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
-          "clicks": 0,
-          "impressions": 0,
-          "cost": 0,
           "conversions": 0
         },
         {
@@ -942,24 +964,26 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"vale de pavo\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 1,
           "impressions": 15,
           "cost": 0.55,
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"vales de pavo\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 0,
           "impressions": 3,
           "cost": 0,
@@ -980,8 +1004,8 @@
         },
         {
           "state": "Habilitado",
-          "keyword": "\"venta de vales de pavo\"",
-          "matchType": "Concordancia de frase",
+          "keyword": "vales de pavo para empresas",
+          "matchType": "Concordancia amplia",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
@@ -992,10 +1016,10 @@
         },
         {
           "state": "Habilitado",
-          "keyword": "vales de pavo para empresas",
-          "matchType": "Concordancia amplia",
+          "keyword": "\"para armar\"",
+          "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
-          "adGroup": "AG2 | Vales de Pavo",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 0,
           "impressions": 0,
@@ -1009,10 +1033,34 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 699,
-          "impressions": 6547,
-          "cost": 415.61,
-          "conversions": 246
+          "clicks": 707,
+          "impressions": 6641,
+          "cost": 421.57,
+          "conversions": 251
+        },
+        {
+          "state": "Habilitado",
+          "keyword": "[catalogo de canastas navideñas 2025]",
+          "matchType": "Concordancia exacta",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 0,
+          "impressions": 0,
+          "cost": 0,
+          "conversions": 0
+        },
+        {
+          "state": "Habilitado",
+          "keyword": "[canastas navideñas 2026]",
+          "matchType": "Concordancia exacta",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 1,
+          "impressions": 4,
+          "cost": 0.65,
+          "conversions": 0
         },
         {
           "state": "En pausa",
@@ -1042,19 +1090,7 @@
         },
         {
           "state": "Habilitado",
-          "keyword": "venta de canastas navideñas",
-          "matchType": "Concordancia amplia",
-          "campaign": "CE | Search | Canastas Navideñas | Lima",
-          "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
-          "clicks": 130,
-          "impressions": 2201,
-          "cost": 85.07,
-          "conversions": 45
-        },
-        {
-          "state": "Habilitado",
-          "keyword": "[canastas navideñas]",
+          "keyword": "[precio de canasta navideña 2025]",
           "matchType": "Concordancia exacta",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
@@ -1063,6 +1099,18 @@
           "impressions": 0,
           "cost": 0,
           "conversions": 0
+        },
+        {
+          "state": "Habilitado",
+          "keyword": "venta de canastas navideñas",
+          "matchType": "Concordancia amplia",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 130,
+          "impressions": 2220,
+          "cost": 85.07,
+          "conversions": 45
         },
         {
           "state": "En pausa",
@@ -1078,12 +1126,13 @@
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"canastas navideñas para empresas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 0,
           "impressions": 1,
           "cost": 0,
@@ -1096,43 +1145,44 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 25,
+          "clicks": 26,
           "impressions": 210,
-          "cost": 14.43,
+          "cost": 14.92,
           "conversions": 9
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"venta de canastas navideñas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 10,
           "impressions": 95,
           "cost": 4.65,
           "conversions": 1
         },
         {
-          "state": "En pausa",
+          "state": "Habilitado",
           "keyword": "\"canastas navideñas corporativas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "En pausa",
-          "reasons": "AD_GROUP_CRITERION_PAUSED",
+          "status": "Apto",
           "clicks": 0,
           "impressions": 0,
           "cost": 0,
           "conversions": 0
         },
         {
-          "state": "Habilitado",
+          "state": "Eliminado",
           "keyword": "\"proveedores de canastas navideñas\"",
           "matchType": "Concordancia de frase",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
-          "status": "Apto",
+          "status": "Eliminado",
+          "reasons": "AD_GROUP_CRITERION_REMOVED",
           "clicks": 1,
           "impressions": 18,
           "cost": 0.39,
@@ -1178,6 +1228,18 @@
         },
         {
           "state": "Habilitado",
+          "keyword": "canasta navideña",
+          "matchType": "Concordancia amplia",
+          "campaign": "CE | Search | Canastas Navideñas | Lima",
+          "adGroup": "AG1 | Canastas Navideñas Empresariales",
+          "status": "Apto",
+          "clicks": 1,
+          "impressions": 21,
+          "cost": 0.57,
+          "conversions": 0
+        },
+        {
+          "state": "Habilitado",
           "keyword": "[makro canastas navideñas]",
           "matchType": "Concordancia exacta",
           "campaign": "CE | Search | Canastas Navideñas | Lima",
@@ -1194,17 +1256,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-19T23:28:31Z",
+    "lastSync": "2026-11-20T11:24:31Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-19T23:09:25.066Z"
+        "modifiedTime": "2026-11-20T11:08:44.097Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-19T23:08:41.532Z"
+        "modifiedTime": "2026-11-20T11:08:00.708Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
