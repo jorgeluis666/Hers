@@ -958,9 +958,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG2 | Vales de Pavo",
           "status": "Apto",
-          "clicks": 0,
-          "impressions": 0,
-          "cost": 0,
+          "clicks": 1,
+          "impressions": 2,
+          "cost": 0.51,
           "conversions": 0
         },
         {
@@ -1033,10 +1033,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 708,
-          "impressions": 6682,
-          "cost": 422.16,
-          "conversions": 251
+          "clicks": 713,
+          "impressions": 6741,
+          "cost": 425.43,
+          "conversions": 253
         },
         {
           "state": "Habilitado",
@@ -1057,9 +1057,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 1,
-          "impressions": 20,
-          "cost": 0.65,
+          "clicks": 3,
+          "impressions": 35,
+          "cost": 1.91,
           "conversions": 0
         },
         {
@@ -1107,9 +1107,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 131,
-          "impressions": 2230,
-          "cost": 86.09,
+          "clicks": 132,
+          "impressions": 2239,
+          "cost": 87.17,
           "conversions": 46
         },
         {
@@ -1171,7 +1171,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 0,
-          "impressions": 0,
+          "impressions": 1,
           "cost": 0,
           "conversions": 0
         },
@@ -1233,10 +1233,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 17,
-          "impressions": 114,
-          "cost": 13.71,
-          "conversions": 3
+          "clicks": 20,
+          "impressions": 135,
+          "cost": 15.34,
+          "conversions": 5
         },
         {
           "state": "Habilitado",
@@ -1256,17 +1256,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-20T18:32:18Z",
+    "lastSync": "2026-11-20T23:28:31Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-20T18:08:55.969Z"
+        "modifiedTime": "2026-11-20T23:09:14.965Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-20T18:07:56.195Z"
+        "modifiedTime": "2026-11-20T23:08:31.162Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
