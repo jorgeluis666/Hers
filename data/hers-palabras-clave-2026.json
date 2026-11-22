@@ -847,7 +847,7 @@
       "driveFileId": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
       "period": {
         "start": "2026-11-01",
-        "end": "2026-11-21"
+        "end": "2026-11-22"
       },
       "keywords": [
         {
@@ -1033,10 +1033,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 727,
-          "impressions": 6842,
-          "cost": 438.56,
-          "conversions": 258
+          "clicks": 729,
+          "impressions": 6865,
+          "cost": 439.65,
+          "conversions": 260
         },
         {
           "state": "Habilitado",
@@ -1058,7 +1058,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 5,
-          "impressions": 52,
+          "impressions": 57,
           "cost": 3.45,
           "conversions": 3
         },
@@ -1233,10 +1233,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 37,
-          "impressions": 244,
-          "cost": 27.85,
-          "conversions": 13
+          "clicks": 41,
+          "impressions": 268,
+          "cost": 31.57,
+          "conversions": 16
         },
         {
           "state": "Habilitado",
@@ -1256,17 +1256,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-21T23:28:33Z",
+    "lastSync": "2026-11-22T11:24:30Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-21T23:08:46.029Z"
+        "modifiedTime": "2026-11-22T11:08:30.918Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-21T23:08:01.184Z"
+        "modifiedTime": "2026-11-22T11:07:47.197Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",
