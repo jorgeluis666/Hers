@@ -1033,10 +1033,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 735,
-          "impressions": 6937,
-          "cost": 444.83,
-          "conversions": 261
+          "clicks": 744,
+          "impressions": 6971,
+          "cost": 452.18,
+          "conversions": 264
         },
         {
           "state": "Habilitado",
@@ -1058,7 +1058,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 7,
-          "impressions": 69,
+          "impressions": 75,
           "cost": 4.54,
           "conversions": 5
         },
@@ -1108,7 +1108,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 134,
-          "impressions": 2252,
+          "impressions": 2261,
           "cost": 88.59,
           "conversions": 48
         },
@@ -1145,9 +1145,9 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 26,
-          "impressions": 213,
-          "cost": 14.92,
+          "clicks": 27,
+          "impressions": 214,
+          "cost": 15.57,
           "conversions": 10
         },
         {
@@ -1171,7 +1171,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "cost": 0,
           "conversions": 0
         },
@@ -1222,7 +1222,7 @@
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
           "clicks": 5,
-          "impressions": 50,
+          "impressions": 51,
           "cost": 2.2,
           "conversions": 2
         },
@@ -1233,10 +1233,10 @@
           "campaign": "CE | Search | Canastas Navideñas | Lima",
           "adGroup": "AG1 | Canastas Navideñas Empresariales",
           "status": "Apto",
-          "clicks": 45,
-          "impressions": 301,
-          "cost": 34.07,
-          "conversions": 17
+          "clicks": 46,
+          "impressions": 324,
+          "cost": 34.79,
+          "conversions": 20
         },
         {
           "state": "Habilitado",
@@ -1256,17 +1256,17 @@
   "drive": {
     "folderId": "1Fc1ahioYK0F41NjJ9hWn-RSANUNbNKM3",
     "discovery": "apps script",
-    "lastSync": "2026-11-22T18:32:11Z",
+    "lastSync": "2026-11-22T23:28:32Z",
     "files": [
       {
         "id": "1igjx9D7i9WkStfBqCT-DF0q9L1jkoNuIRQOPqSWR-O0",
         "name": "Hers KW noviembre 2026",
-        "modifiedTime": "2026-11-22T18:08:49.730Z"
+        "modifiedTime": "2026-11-22T23:08:29.507Z"
       },
       {
         "id": "1x9GC1hAgWypbw0cqg6Sk41RHlWZMtuEL9ef1O5x5FHM",
         "name": "Hers KW octubre 2026",
-        "modifiedTime": "2026-11-22T18:07:47.923Z"
+        "modifiedTime": "2026-11-22T23:07:46.078Z"
       },
       {
         "id": "1L6w3A3DnoVmoL9WwKji52gvg0CkqVBde5zqLYfUHMLw",

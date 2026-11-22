@@ -906,31 +906,31 @@
           {
             "campaign": "CE | Search | Canastas Navideñas | Lima",
             "type": "Búsqueda",
-            "cost": 605.32,
-            "impressions": 10074,
-            "ctr": 0.0971,
-            "clicks": 978,
-            "costPerConversion": 1.75,
-            "conversions": 346,
+            "cost": 614.04,
+            "impressions": 10149,
+            "ctr": 0.0974,
+            "clicks": 989,
+            "costPerConversion": 1.74,
+            "conversions": 352,
             "status": "Habilitada",
             "dailyBudget": 25.5,
-            "costDelta": -0.2442097114532219,
-            "ctrDelta": -0.1563857515204169,
-            "clicksDelta": -0.10766423357664234,
-            "conversionsDelta": -0.13923924670995358,
-            "costPerConversionDelta": -0.12060301507537685,
-            "impressionsDelta": 0.05763779527559065
+            "costDelta": -0.23332209611566845,
+            "ctrDelta": -0.15377932232841007,
+            "clicksDelta": -0.09762773722627738,
+            "conversionsDelta": -0.12431275965868105,
+            "costPerConversionDelta": -0.12562814070351758,
+            "impressionsDelta": 0.06551181102362214
           }
         ],
         "sourceFile": "Hers noviembre 2026",
         "driveFileId": "1mR6RV2WsXxaf4am9WCBvwlB0qGEJo2Mz89HmJSIxr-s",
         "totals": {
-          "cost": 605.32,
-          "impressions": 10074,
-          "clicks": 978,
-          "conversions": 346,
-          "ctr": 0.09708159618820726,
-          "costPerConversion": 1.75
+          "cost": 614.04,
+          "impressions": 10149,
+          "clicks": 989,
+          "conversions": 352,
+          "ctr": 0.09744802443590501,
+          "costPerConversion": 1.74
         },
         "period": {
           "start": "2026-11-01",
@@ -1131,10 +1131,10 @@
             "campaign": "CE | Search | Canastas Navideñas | Lima",
             "adGroup": "AG1 | Canastas Navideñas Empresariales",
             "status": "Apto",
-            "clicks": 735,
-            "impressions": 6937,
-            "cost": 444.83,
-            "conversions": 261
+            "clicks": 744,
+            "impressions": 6971,
+            "cost": 452.18,
+            "conversions": 264
           },
           {
             "state": "Habilitado",
@@ -1156,7 +1156,7 @@
             "adGroup": "AG1 | Canastas Navideñas Empresariales",
             "status": "Apto",
             "clicks": 7,
-            "impressions": 69,
+            "impressions": 75,
             "cost": 4.54,
             "conversions": 5
           },
@@ -1206,7 +1206,7 @@
             "adGroup": "AG1 | Canastas Navideñas Empresariales",
             "status": "Apto",
             "clicks": 134,
-            "impressions": 2252,
+            "impressions": 2261,
             "cost": 88.59,
             "conversions": 48
           },
@@ -1243,9 +1243,9 @@
             "campaign": "CE | Search | Canastas Navideñas | Lima",
             "adGroup": "AG1 | Canastas Navideñas Empresariales",
             "status": "Apto",
-            "clicks": 26,
-            "impressions": 213,
-            "cost": 14.92,
+            "clicks": 27,
+            "impressions": 214,
+            "cost": 15.57,
             "conversions": 10
           },
           {
@@ -1269,7 +1269,7 @@
             "adGroup": "AG1 | Canastas Navideñas Empresariales",
             "status": "Apto",
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "cost": 0,
             "conversions": 0
           },
@@ -1320,7 +1320,7 @@
             "adGroup": "AG1 | Canastas Navideñas Empresariales",
             "status": "Apto",
             "clicks": 5,
-            "impressions": 50,
+            "impressions": 51,
             "cost": 2.2,
             "conversions": 2
           },
@@ -1331,10 +1331,10 @@
             "campaign": "CE | Search | Canastas Navideñas | Lima",
             "adGroup": "AG1 | Canastas Navideñas Empresariales",
             "status": "Apto",
-            "clicks": 45,
-            "impressions": 301,
-            "cost": 34.07,
-            "conversions": 17
+            "clicks": 46,
+            "impressions": 324,
+            "cost": 34.79,
+            "conversions": 20
           },
           {
             "state": "Habilitado",
@@ -1350,7 +1350,7 @@
           }
         ]
       },
-      "capturedAt": "2026-11-22T18:32:06Z"
+      "capturedAt": "2026-11-22T23:28:27Z"
     }
   ]
 }
